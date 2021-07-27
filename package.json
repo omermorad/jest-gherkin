@@ -1,26 +1,50 @@
 {
   "name": "jest-gherkin",
   "version": "0.0.0-alpha.0",
-  "types": "index.d.ts",
-  "main": "setup.js",
+  "types": "types/index.d.ts",
+  "main": "dist/index.js",
   "author": {
     "name": "Omer Morad",
     "email": "omer.moradd@gmail.com"
   },
   "files": [
     "README.md",
-    "index.d.ts",
-    "setup.js"
+    "types/index.d.ts",
+    "dist"
   ],
+  "license": "MIT",
+  "repository": "https://github.com/omermorad/jest-gherkin",
+  "readme": "https://github.com/omermorad/jest-gherkin/README.md",
   "peerDependencies": {
     "jest": "^24.0.0"
   },
-  "devDependencies": {
-    "@types/jest": "^26.0.24",
-    "jest": "^27.0.6",
-    "typescript": "^4.3.5"
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "babel src -d dist",
+    "test": "jest",
+    "lint": "eslint '{src,test}/**/*.js'",
+    "prepublish": "yarn build"
   },
-  "license": "MIT",
-  "repository": "https://github.com/omermorad/jest-gherkin",
-  "readme": "https://github.com/omermorad/jest-gherkin/README.md"
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@types/jest": "^26.0.24",
+    "eslint": ">=7.0.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.4"
+  },
+  "eslintIgnore": [
+    "dist",
+    "node_modules",
+    "jest.config.js"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.14.8"
+  }
 }
