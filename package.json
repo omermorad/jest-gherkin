@@ -1,6 +1,6 @@
 {
   "name": "jest-gherkin",
-  "version": "0.0.0-akpha.2",
+  "version": "0.0.0-alpha.2",
   "types": "types/index.d.ts",
   "main": "dist/index.js",
   "author": {
