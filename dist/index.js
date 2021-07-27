@@ -1,15 +1,13 @@
-const properties = ['given', 'when', 'and', 'scenario']
-
-properties.forEach(function (prop) {
+['given', 'when', 'and', 'scenario'].forEach(function (prop) {
   Object.defineProperty(global, prop, {
-    get: function () {
+    get() {
       return global.describe;
     },
   });
-})
+});
 
 Object.defineProperty(global, 'then', {
-  get: function () {
+  get() {
     return global.test;
   },
 });
