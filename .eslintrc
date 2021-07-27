@@ -9,7 +9,6 @@
   "rules": {
     "func-names": "off",
     "no-undef": "off",
-    "prefer-arrow-callback": "off",
     "prettier/prettier": [
       "error",
       {
