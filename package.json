@@ -1,6 +1,6 @@
 {
   "name": "jest-gherkin",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0",
   "types": "types/index.d.ts",
   "main": "dist/index.js",
   "author": {
@@ -16,6 +16,9 @@
   "repository": "https://github.com/omermorad/jest-gherkin",
   "readme": "https://github.com/omermorad/jest-gherkin/README.md",
   "keywords": [
+    "bdd",
+    "cucumber",
+    "gherkin",
     "unit-testing",
     "jest",
     "bdd",
@@ -24,7 +27,7 @@
     "jest-plugin"
   ],
   "peerDependencies": {
-    "jest": ">= ^24.0.0 < ^27.0.0"
+    "jest": "*"
   },
   "scripts": {
     "prebuild": "rimraf dist",
@@ -35,8 +38,8 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
-    "@types/jest": "^26.0.24",
     "eslint": ">=7.0.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "8.3.0",
@@ -44,15 +47,11 @@
     "eslint-plugin-prettier": "^3.4.0",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^27.0.4"
+    "rimraf": "^3.0.2"
   },
   "eslintIgnore": [
     "dist",
     "node_modules",
     "jest.config.js"
-  ],
-  "dependencies": {
-    "@babel/core": "^7.14.8"
-  }
+  ]
 }
