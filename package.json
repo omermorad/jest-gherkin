@@ -15,8 +15,16 @@
   "license": "MIT",
   "repository": "https://github.com/omermorad/jest-gherkin",
   "readme": "https://github.com/omermorad/jest-gherkin/README.md",
+  "keywords": [
+    "unit-testing",
+    "jest",
+    "bdd",
+    "integration-testing",
+    "bdd-framework",
+    "jest-plugin"
+  ],
   "peerDependencies": {
-    "jest": "^24.0.0"
+    "jest": ">= ^24.0.0 < ^27.0.0"
   },
   "scripts": {
     "prebuild": "rimraf dist",
