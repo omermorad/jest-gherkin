@@ -11,6 +11,6 @@
 
 Object.defineProperty(global, 'then', {
   get() {
-    return (...args) => global.describe(`then ${args[0]}`, args[1]);
+    return (...args) => global.it(`then ${args[0]}`, args[1]);
   },
 });
